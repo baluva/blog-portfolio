@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect technique du projet - Louey Barbirou</title>
+    <meta name="description" content="Détails techniques sur la refonte SQL et l'architecture client/serveur mise en place">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Louey Barbirou</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-main">
+        <article class="article-content">
+            <div class="container">
+                <header class="article-header">
+                    <nav class="breadcrumb">
+                        <a href="blog.html">Blog</a> > <span>Aspect technique du projet</span>
+                    </nav>
+                    <h1>Aspect technique du projet</h1>
+                    <p class="article-meta">Article 3 • Architecture et bonnes pratiques</p>
+                </header>
+
+                <div class="article-body">
+                    <h2>Architecture technique mise en place</h2>
+                    <p>
+                        La refonte complète de la base de données m'a amené à repenser entièrement 
+                        l'architecture du système d'information de BTES. Ce projet technique 
+                        ambitieux a nécessité une approche rigoureuse et des choix technologiques 
+                        stratégiques.
+                    </p>
+
+                    <h2>Refonte de la structure SQL</h2>
+                    
+                    <h3>Normalisation et optimisation</h3>
+                    <p>
+                        J'ai appliqué les principes de normalisation pour éliminer la redondance 
+                        des données et assurer la cohérence. La nouvelle structure respecte les 
+                        formes normales jusqu'à 3NF, garantissant ainsi l'intégrité des données 
+                        et facilitant les opérations de maintenance.
+                    </p>
+
+                    <h3>Gestion des contraintes et relations</h3>
+                    <p>
+                        Mise en place de contraintes d'intégrité référentielle strictes, 
+                        définition de clés étrangères appropriées et création de triggers 
+                        pour maintenir la cohérence des données lors des opérations complexes.
+                    </p>
+
+                    <h3>Indexation stratégique</h3>
+                    <p>
+                        Analyse des patterns de requêtes pour créer des index composites optimaux. 
+                        Cette approche a permis de réduire significativement les temps de réponse 
+                        sur les requêtes les plus fréquemment exécutées.
+                    </p>
+
+                    <h2>Architecture client/serveur modernisée</h2>
+                    
+                    <h3>Séparation des responsabilités</h3>
+                    <p>
+                        Implémentation d'une architecture en couches claire : couche de présentation, 
+                        couche métier et couche d'accès aux données. Cette séparation facilite 
+                        la maintenance et permet une meilleure scalabilité du système.
+                    </p>
+
+                    <h3>API sécurisée</h3>
+                    <p>
+                        Développement d'une interface API robuste avec authentification forte, 
+                        validation des données en entrée et gestion appropriée des erreurs. 
+                        Chaque endpoint est sécurisé et documenté.
+                    </p>
+
+                    <h2>Mesures de sécurité implémentées</h2>
+                    
+                    <h3>Chiffrement des données</h3>
+                    <p>
+                        Mise en place d'un système de chiffrement pour toutes les données sensibles, 
+                        tant au niveau stockage qu'au niveau transmission. Utilisation d'algorithmes 
+                        de chiffrement reconnus et gestion sécurisée des clés.
+                    </p>
+
+                    <h3>Contrôle d'accès granulaire</h3>
+                    <p>
+                        Implémentation d'un système de rôles et permissions permettant un contrôle 
+                        fin des accès selon le principe du moindre privilège. Chaque utilisateur 
+                        n'a accès qu'aux données strictement nécessaires à ses fonctions.
+                    </p>
+
+                    <h3>Audit et traçabilité</h3>
+                    <p>
+                        Création d'un système complet de logging permettant de tracer toutes les 
+                        opérations effectuées sur la base de données. Ces logs incluent l'identité 
+                        de l'utilisateur, l'heure, l'action effectuée et les données concernées.
+                    </p>
+
+                    <h2>Bonnes pratiques appliquées</h2>
+                    <p>
+                        Tout au long du développement, j'ai appliqué les bonnes pratiques de 
+                        l'industrie : code documenté, tests unitaires, versioning des scripts SQL, 
+                        et procédures de déploiement sécurisées. Cette approche garantit la 
+                        maintenabilité à long terme du système.
+                    </p>
+
+                    <div class="article-navigation">
+                        <a href="article2.html" class="nav-btn nav-back">← Article précédent</a>
+                        <a href="article4.html" class="nav-btn nav-next">Article suivant →</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Louey Barbirou. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:Loueybarbirou12@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/louey-barbirou-2b97a828b" target="_blank">LinkedIn</a>
+                <a href="https://github.com/baluva" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

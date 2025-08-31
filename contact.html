@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Louey Barbirou</title>
+    <meta name="description" content="Contactez Louey Barbirou pour discuter d'opportunités professionnelles">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Louey Barbirou</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contactez-moi</h1>
+                <p class="contact-subtitle">
+                    Vous cherchez un développeur motivé et rigoureux ? 
+                    Je suis ouvert aux opportunités professionnelles et aux échanges enrichissants.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Parlons ensemble</h2>
+                        <p>
+                            Que vous soyez recruteur, responsable technique ou dirigeant d'entreprise, 
+                            n'hésitez pas à me contacter pour discuter de vos projets et de la façon 
+                            dont mes compétences pourraient contribuer à vos objectifs.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">✉</div>
+                                <div class="method-info">
+                                    <h3>Email</h3>
+                                    <a href="mailto:Loueybarbirou12@gmail.com">Loueybarbirou12@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">💼</div>
+                                <div class="method-info">
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://linkedin.com/in/louey-barbirou-2b97a828b" target="_blank">
+                                        linkedin.com/in/louey-barbirou-2b97a828b
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">🔗</div>
+                                <div class="method-info">
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/baluva" target="_blank">github.com/baluva</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📄</div>
+                                <div class="method-info">
+                                    <h3>CV</h3>
+                                    <a href="CV_Louey.pdf" download class="cv-download">
+                                        Télécharger mon CV (PDF)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>Message rapide</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionner un sujet</option>
+                                    <option value="stage">Opportunité de stage</option>
+                                    <option value="emploi">Opportunité d'emploi</option>
+                                    <option value="projet">Collaboration sur projet</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="availability">
+            <div class="container">
+                <div class="availability-card">
+                    <h2>Disponibilité</h2>
+                    <p>
+                        Actuellement disponible pour des opportunités de stage, d'alternance ou d'emploi 
+                        dans le domaine du développement et de l'administration de bases de données.
+                    </p>
+                    <p>
+                        <strong>Domaines d'intérêt :</strong> Développement SQL, sécurité informatique, 
+                        architecture client/serveur, optimisation de performances.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Louey Barbirou. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:Loueybarbirou12@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/louey-barbirou-2b97a828b" target="_blank">LinkedIn</a>
+                <a href="https://github.com/baluva" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

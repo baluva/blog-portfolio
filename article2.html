@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difficultés rencontrées et solutions - Louey Barbirou</title>
+    <meta name="description" content="Les défis techniques et les solutions apportées lors de la refonte de la base de données BTES">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Louey Barbirou</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À propos</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-main">
+        <article class="article-content">
+            <div class="container">
+                <header class="article-header">
+                    <nav class="breadcrumb">
+                        <a href="blog.html">Blog</a> > <span>Difficultés rencontrées et solutions</span>
+                    </nav>
+                    <h1>Difficultés rencontrées et solutions</h1>
+                    <p class="article-meta">Article 2 • Défis techniques et méthodologiques</p>
+                </header>
+
+                <div class="article-body">
+                    <h2>Le constat initial</h2>
+                    <p>
+                        Dès mes premiers jours de travail sur le système existant, j'ai rapidement 
+                        réalisé l'ampleur du défi qui m'attendait. La base de données en place 
+                        présentait des signes évidents de vieillissement et des problématiques 
+                        structurelles majeures.
+                    </p>
+
+                    <h2>Problématiques identifiées</h2>
+                    
+                    <h3>Architecture obsolète</h3>
+                    <p>
+                        La structure de la base de données datait de plusieurs années et n'avait pas 
+                        évolué avec les besoins croissants de l'entreprise. Les relations entre 
+                        tables étaient parfois incohérentes, et certaines requêtes prenaient un 
+                        temps considérable à s'exécuter.
+                    </p>
+
+                    <h3>Failles de sécurité critiques</h3>
+                    <p>
+                        L'audit que j'ai mené a révélé plusieurs vulnérabilités importantes : 
+                        absence de chiffrement pour certaines données sensibles, droits d'accès 
+                        trop permissifs, et absence de traçabilité des modifications. Ces failles 
+                        représentaient un risque réel pour la confidentialité des données clients.
+                    </p>
+
+                    <h3>Performance dégradée</h3>
+                    <p>
+                        Les temps de réponse étaient devenus problématiques, impactant directement 
+                        la productivité des équipes. L'absence d'index sur certaines colonnes 
+                        fréquemment requêtées et la présence de requêtes mal optimisées 
+                        contribuaient à cette situation.
+                    </p>
+
+                    <h2>Approche méthodologique</h2>
+                    <p>
+                        Face à ces défis, j'ai adopté une approche structurée en plusieurs phases :
+                    </p>
+                    <ol>
+                        <li><strong>Audit complet :</strong> Analyse exhaustive de l'existant</li>
+                        <li><strong>Priorisation :</strong> Identification des urgences sécuritaires</li>
+                        <li><strong>Planification :</strong> Élaboration d'un plan de migration progressif</li>
+                        <li><strong>Tests :</strong> Validation de chaque étape avant déploiement</li>
+                    </ol>
+
+                    <h2>Solutions mises en œuvre</h2>
+                    
+                    <h3>Refonte architecturale</h3>
+                    <p>
+                        J'ai entièrement repensé la structure de la base de données en appliquant 
+                        les principes de normalisation et en optimisant les relations entre entités. 
+                        Cette nouvelle architecture garantit une meilleure scalabilité et facilite 
+                        la maintenance future.
+                    </p>
+
+                    <h3>Sécurisation complète</h3>
+                    <p>
+                        Mise en place d'un système de chiffrement pour les données sensibles, 
+                        révision complète des droits d'accès avec principe du moindre privilège, 
+                        et implémentation d'un système d'audit pour tracer toutes les opérations.
+                    </p>
+
+                    <h3>Optimisation des performances</h3>
+                    <p>
+                        Création d'index stratégiques, réécriture des requêtes les plus coûteuses, 
+                        et mise en place d'un système de monitoring pour surveiller les performances 
+                        en continu.
+                    </p>
+
+                    <div class="article-navigation">
+                        <a href="article1.html" class="nav-btn nav-back">← Article précédent</a>
+                        <a href="article3.html" class="nav-btn nav-next">Article suivant →</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Louey Barbirou. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:Loueybarbirou12@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/louey-barbirou-2b97a828b" target="_blank">LinkedIn</a>
+                <a href="https://github.com/baluva" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
